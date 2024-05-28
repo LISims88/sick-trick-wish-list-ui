@@ -40,7 +40,6 @@ function Form (){
     }
   };
 
-
     return (
         <form className="form" onSubmit={handleSubmit}>
             <select value={stance} onChange={(event)=> selectedStance(event.target.value)}>
