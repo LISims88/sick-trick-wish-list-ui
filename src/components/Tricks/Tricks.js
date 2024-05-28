@@ -1,13 +1,17 @@
 import './Tricks.css'
 
-function Tricks({stance, name, obstacle, tutorial}){
-    return(
-    <div className="tricks">
-        <p>{stance}{name}</p>
-        <p>Obstacle: {obstacle} </p>
-        <p>Link to Tutorial</p>
-        <p>{tutorial}</p>
-    </div> 
-    )
-}
+function Tricks({ tricks }) {
+    return (
+      <div className="tricks">
+        {tricks.map((trick, index) => (
+          <div className='trick' key={index}>
+            <p>{trick.stance} {trick.name}</p>
+            <p>Obstacle: {trick.obstacle}</p>
+            <p>Link to Tutorial</p>
+            <p>{trick.tutorial}</p>
+          </div>
+        ))}
+      </div>
+    );
+  }
 export default Tricks
