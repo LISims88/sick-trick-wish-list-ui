@@ -1,0 +1,7 @@
+.tricks{
+    background-color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
