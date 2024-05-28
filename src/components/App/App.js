@@ -1,4 +1,5 @@
 import './App.css';
+import getTricks from '../API/API';
 import React from 'react';
 
 
