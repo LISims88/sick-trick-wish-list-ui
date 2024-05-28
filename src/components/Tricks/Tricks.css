@@ -1,0 +1,9 @@
+.tricks{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+.trick{
+    background-color: aliceblue;
+}
